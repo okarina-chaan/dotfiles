@@ -1,4 +1,4 @@
-alias replace_rspec='rm ~/Rails_basis/84064_okarina-chaan_basic_rails_basic/rspec && cp ~/Downloads/rspec ~/'
+alias replace_spec='rm -r ~/Rails_basis/84064_okarina-chaan_basic_rails_basic/spec && cp -r ~/Downloads/spec  ~/Rails_basis/84064_okarina-chaan_basic_rails_basic'
 
 alias dcb='docker compose build'
 
