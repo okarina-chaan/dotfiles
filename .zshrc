@@ -16,7 +16,7 @@ alias dcyarn='docker compose run web yarn install'
 
 alias db-c='docker compose exec web rails db:create'
 
-alias bd-m='docker compose exec web rails db:migrate'
+alias db-m='docker compose exec web rails db:migrate'
 
 alias dce='docker compose exec web '
 
@@ -29,3 +29,7 @@ alias gb='git branch'
 alias ll='ls -la'
 
 alias gc='git checkout'
+
+alias rbc ='docker compose exec web bundle exec rubocop'
+
+alias gg ='git grep'
