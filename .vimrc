@@ -16,7 +16,7 @@ set tabstop=2           " タブ幅を2に設定
 set shiftwidth=2        " 自動インデントの幅を2に設定
 
 " ヤンク・クリップボードの共有
-set clipboard+=unnamedplus " システムクリップボードと共有
+set clipboard=unnamedplus
 
 " 行末の空白を可視化
 set listchars=tab:>-,trail:-,extends:>,precedes:<,nbsp:%
@@ -30,4 +30,4 @@ inoremap " ""<Left>
 inoremap ' ''<Left>
 
 " 置換
- cnoreabbrev <expr> s getcmdtype() .. getcmdline() ==# ':s' ? [getchar(), ''][1] .. "%s///g<Left><Left>" : 's'
+cnoreabbrev s %s///g<Left><Left>
