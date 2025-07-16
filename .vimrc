@@ -31,3 +31,6 @@ inoremap ' ''<Left>
 
 " 置換
 cnoreabbrev s %s///g<Left><Left>
+
+" プラグイン
+Plug 'skanehira/preview-markdown.vim'
