@@ -1,4 +1,4 @@
-alias replace_spec='rm -r ~/Rails_basis/84064_okarina-chaan_basic_rails_basic/spec && cp -r ~/Downloads/spec  ~/Rails_basis/84064_okarina-chaan_basic_rails_basic'
+alias replace_spec='rm -r ~/workspace/83784_okarina-chaan_runteq_curriculum_advanced/spec && cp -r ~/Downloads/spec  ~/workspace/83784_okarina-chaan_runteq_curriculum_advanced'
 
 alias dcb='docker compose build'
 
@@ -33,3 +33,7 @@ alias gc='git checkout'
 alias rbc ='docker compose exec web bundle exec rubocop'
 
 alias gg ='git grep'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
