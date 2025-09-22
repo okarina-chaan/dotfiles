@@ -1,3 +1,5 @@
+alias vi='nvim'
+
 alias replace_spec='rm -r ~/workspace/83784_okarina-chaan_runteq_curriculum_advanced/spec && cp -r ~/Downloads/spec  ~/workspace/83784_okarina-chaan_runteq_curriculum_advanced'
 
 alias dcb='docker compose build'
@@ -26,7 +28,7 @@ alias ga='git add'
 
 alias gb='git branch'
 
-alias ll='ls -la'
+alias ll='ls -Fal --color=auto'
 
 alias gc='git checkout'
 
