@@ -34,7 +34,3 @@ inoremap <silent> jj <ESC>
 
 " 置換
 cnoreabbrev s %s///g<Left><Left>
-
-  " 元のウィンドウに戻る
-  call win_gotoid(l:current_window)
-endfunction

@@ -2,6 +2,8 @@ alias vi='nvim'
 
 alias replace_spec='rm -r ~/workspace/83784_okarina-chaan_runteq_curriculum_advanced/spec && cp -r ~/Downloads/spec  ~/workspace/83784_okarina-chaan_runteq_curriculum_advanced'
 
+alias replace_mtest='rm -r ~/workspace/85184_okarina-chaan_ruby_advanced/minitest && cp -r ~/Downloads/minitest  ~/workspace/85184_okarina-chaan_ruby_advanced'
+
 alias dcb='docker compose build'
 
 alias dcu='docker compose up'
