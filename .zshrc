@@ -34,7 +34,7 @@ alias ll='ls -Fal --color=auto'
 
 alias gc='git checkout'
 
-alias rbc ='docker compose exec web bundle exec rubocop'
+# alias rubocop ='docker compose exec web bundle exec rubocop'
 
 alias gg ='git grep'
 
