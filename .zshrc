@@ -8,11 +8,13 @@ alias dcb='docker compose build'
 
 alias dcu='docker compose up'
 
+alias dcd='docker compose down'
+
 alias gc-m='git commit -m '
 
-alias gplo='git pull origin '
+alias gpl='git pull origin HEAD'
 
-alias gpso='git push origin '
+alias gps='git push origin HEAD'
 
 alias dcbundle='docker compose run web bundle install'
 
@@ -34,9 +36,11 @@ alias ll='ls -Fal --color=auto'
 
 alias gc='git checkout'
 
-# alias rubocop ='docker compose exec web bundle exec rubocop'
+alias grep='grep --color=auto'
 
-alias gg ='git grep'
+alias rm='rm -i'
+
+# alias rubocop ='docker compose exec web bundle exec rubocop'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
