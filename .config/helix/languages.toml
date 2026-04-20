@@ -1,0 +1,59 @@
+[language-server.hx-lsp]
+command = "hx-lsp"
+args = ["--dir", "~/.config/helix/snippets"]
+
+[[language]]
+name = "ruby"
+file-types = ["rb", "rake", "ru", "Gemfile", "Capfile", "Guardfile"]
+language-servers = ["ruby-lsp", "hx-lsp"]
+auto-format = true
+
+[language.formatter]
+command = "bundle"
+args = ["exec", "rubocop", "-A", "--stdin", "stdin.rb", "--stderr", "--format", "quiet"]
+
+[language-server.ruby-lsp]
+command = "ruby-lsp"
+config = { diagnostics = true, formatting = true }
+
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "javascript"
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+language-servers = ["typescript-language-server", "hx-lsp"]
+
+[[language]]
+name = "jsx"
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+language-servers = ["typescript-language-server", "hx-lsp"]
+
+[[language]]
+name = "typescript"
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+language-servers = ["typescript-language-server", "hx-lsp"]
+
+[[language]]
+name = "tsx"
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+language-servers = ["typescript-language-server", "hx-lsp"]
+
+[[language]]
+name = "json"
+comment-token = "//"
+
+[[language]]
+name = "erb"
+file-types = ["html.erb"]
+
+[language-server.gopls]
+command = "gopls"
+args = ["-logfile=/tmp/gopls.log",  "serve"]
+[language-server.gopls.config]
+"ui.diagnostic.staticcheck" = true

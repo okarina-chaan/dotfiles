@@ -1,0 +1,108 @@
+
+{
+  "Ruby def": {
+    "prefix": "def",
+    "body": [
+      "def ${1:method_name}",
+      "  ${2}",
+      "end"
+    ],
+    "description": "Ruby method definition"
+  },
+
+  "Rails controller action": {
+    "prefix": "action",
+    "body": [
+      "def ${1:index}",
+      "  ${2}",
+      "end"
+    ],
+    "description": "Rails controller action"
+  },
+
+  "Rails before_action": {
+    "prefix": "before",
+    "body": [
+      "before_action :${1:method_name}"
+    ],
+    "description": "Rails before_action"
+  },
+
+  "Rails private method": {
+    "prefix": "private",
+    "body": [
+      "private",
+      "",
+      "def ${1:method_name}",
+      "  ${2}",
+      "end"
+    ],
+    "description": "Rails private method"
+  },
+
+  "Strong Parameters": {
+    "prefix": "permit",
+    "body": [
+      "params.require(:${1:model}).permit(",
+      "  ${2}",
+      ")"
+    ],
+    "description": "Rails strong parameters"
+  },
+
+  "RSpec describe": {
+    "prefix": "describe",
+    "body": [
+      "describe \"${1:subject}\" do",
+      "  ${2}",
+      "end"
+    ],
+    "description": "RSpec describe block"
+  },
+
+  "RSpec context": {
+    "prefix": "context",
+    "body": [
+      "context \"${1:when}\" do",
+      "  ${2}",
+      "end"
+    ],
+    "description": "RSpec context block"
+  },
+
+  "RSpec it": {
+    "prefix": "it",
+    "body": [
+      "it \"${1:does something}\" do",
+      "  ${2}",
+      "end"
+    ],
+    "description": "RSpec it block"
+  },
+
+  "RSpec let": {
+    "prefix": "let",
+    "body": [
+      "let(:${1:name}) { ${2} }"
+    ],
+    "description": "RSpec let helper"
+  },
+
+  "ERB output": {
+    "prefix": "erb",
+    "body": [
+      "<%= ${1} %>"
+    ],
+    "description": "ERB output tag"
+  },
+
+  "ERB if block": {
+    "prefix": "ifp",
+    "body": [
+      "<% if ${1:condition} %>",
+      "  ${2}",
+      "<% end %>"
+    ],
+    "description": "ERB if block"
+  }
+}
